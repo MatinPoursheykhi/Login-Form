@@ -1,0 +1,165 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(-135deg, #c850c0, #4158d0);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.info{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width:200px ;
+    padding: 1rem;
+    background-color: rgb(45, 45, 45);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    word-break: break-all;
+}
+.info div{
+    border-bottom: 1px solid #fff;
+}
+section{
+    width: 70%;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 15px 1px #c3c3c3;
+    padding: 1rem;
+}
+#loginSec{
+    height: 90%;
+}
+h2{
+    font-size: 27px;
+}
+section>div:nth-of-type(1) figure{
+    box-shadow: 0 0 20px 1px rgba(142, 142, 142, 0.526);
+    border-radius: 50%;
+}
+section>div:nth-of-type(2){
+    width: 100%;
+}
+@media screen and (min-width: 992px) {
+    section>div:nth-of-type(2){
+        width: 50%;
+    }
+}
+
+section>div:nth-of-type(2) div{
+    width: 120%;
+}
+section>div:nth-of-type(2) label i{
+    position: absolute;
+    top: 50%;left: 8%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+}
+section>div:nth-of-type(2) input{
+    width: 90%;
+    border-radius: 15px;
+    background-color: rgb(211, 211, 211);
+    border: none;
+    padding: .5rem 3rem;
+    height: 50px;
+}
+section>div:nth-of-type(2) button{
+    width: 90%;
+    background-color: #57b846;
+    border: none;
+    height: 50px;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: .3s linear all;
+    cursor: pointer;
+}
+section>div:nth-of-type(2) button:active{
+    transform: scale(1.05);
+}
+section>div:nth-of-type(2) button:focus{
+    outline: none;
+}
+section>div:nth-of-type(2) button:hover{
+    background-color: #212529;
+}
+section>div:nth-of-type(2)>div :where(span , a){
+    font-size: 15px;
+    color: #666;
+}
+
+
+/* profile page */
+#infoSec{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+#infoSec .leftSide{
+    width: 100%;
+    padding: 1rem;
+}
+#infoSec .rightSide{
+    width: 100%;
+    padding: 1rem;
+}
+
+#infoSec .leftSide img{
+    min-width: 100px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+@media screen and (min-width: 992px) {
+    #infoSec{
+        flex-direction: row;
+    }
+    #infoSec .leftSide{
+        width: 30% !important;
+        height: 100%;
+    }
+    #infoSec .rightSide{
+        width: 70% !important;
+        height: 100%;
+        border-left: 1px solid #21252939;
+    }
+    #infoSec .leftSide{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    
+    }
+    #infoSec .rightSide{
+        box-shadow: 1px 0 10px 0 rgba(162, 162, 162, 0.8);
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    #infoSec .leftSide img{
+        min-width: 170px;
+    }
+    
+}
+#infoSec .rightSide h4{
+    margin-top: 1rem;
+}
+#infoSec .rightSide h4>span:nth-of-type(2){
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    word-wrap: break-word;
+    margin-top: 1rem;
+}
